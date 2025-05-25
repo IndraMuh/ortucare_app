@@ -1,4 +1,9 @@
 # 🍼 Ortucare App – Parenting Assistant with AI 💬
+![Flutter](https://img.shields.io/badge/Flutter-3.4.3-blue?logo=flutter)
+![Laravel](https://img.shields.io/badge/Laravel-10-red?logo=laravel)
+![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS-green)
+![License](https://img.shields.io/badge/License-MIT-blueviolet)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
 **Ortucare** adalah aplikasi mobile berbasis Flutter yang dirancang untuk membantu para orang tua — khususnya ibu — dalam menjalani peran sebagai pengasuh anak. Aplikasi ini dilengkapi dengan asisten AI bernama **Anam** yang siap memberikan saran pengasuhan anak yang cepat, empatik, dan relevan.
 
@@ -94,6 +99,7 @@
 4. Jalankan aplikasi:
    ```bash
    flutter run
+   
 ### 🔧 Jalankan Backend Laravel
 
 1. Masuk ke folder backend/ortucare:
@@ -119,3 +125,11 @@
 - Gunakan flutter_launcher_icons untuk generate ikon:
   ```bash
   flutter pub run flutter_launcher_icons:main
+  
+---
+
+## 📃 Lisensi  
+
+Hak cipta © 2025 IndraMuh
+
+Diberikan izin untuk menggunakan, menyalin, memodifikasi, dan mendistribusikan perangkat lunak ini dengan syarat menyertakan pemberitahuan lisensi ini.
