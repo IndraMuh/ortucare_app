@@ -21,6 +21,26 @@
 
 ---
 
+## 📸 Preview Aplikasi
+
+| SplashScreen | landing Page | Register Page |
+|--------------|------------|-------------|
+| ![chat](https://github.com/IndraMuh/ortucare_app/blob/main/frontend/ortucare/assets/preview%20(1).jpg?raw=true) | ![input](https://github.com/IndraMuh/ortucare_app/blob/main/frontend/ortucare/assets/preview%20(2).jpg?raw=true) | ![ai](https://github.com/IndraMuh/ortucare_app/blob/main/frontend/ortucare/assets/preview%20(5).jpg?raw=true) |
+
+---
+
+| Login Page | Forgot Password | Home Page |
+|--------------|------------|-------------|
+| ![chat](https://github.com/IndraMuh/ortucare_app/blob/main/frontend/ortucare/assets/preview%20(3).jpg?raw=true) | ![input](https://github.com/IndraMuh/ortucare_app/blob/main/frontend/ortucare/assets/preview%20(4).jpg?raw=true) | ![ai](https://github.com/IndraMuh/ortucare_app/blob/main/frontend/ortucare/assets/preview%20(6).jpg?raw=true) |
+
+---
+
+| Class Page | Ai Page | Profile Page |
+|--------------|------------|-------------|
+| ![chat](https://github.com/IndraMuh/ortucare_app/blob/main/frontend/ortucare/assets/preview%20(7).jpg?raw=true) | ![input](https://github.com/IndraMuh/ortucare_app/blob/main/frontend/ortucare/assets/preview%20(8).jpg?raw=true) | ![ai](https://github.com/IndraMuh/ortucare_app/blob/main/frontend/ortucare/assets/preview%20(9).jpg?raw=true) |
+
+---
+
 ## 🛠️ Teknologi yang Digunakan
 
 ### 🎯 Frontend (Flutter)
