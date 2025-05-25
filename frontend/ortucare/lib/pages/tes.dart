@@ -1,0 +1,246 @@
+// import 'dart:math';
+
+// import 'package:flutter/material.dart';
+// import 'package:ortucare/models/food_model.dart';
+// import 'package:ortucare/pages/tes_detail.dart';
+// import 'package:ortucare/widgets/bottom_nav.dart';
+// import 'package:ortucare/widgets/const.dart';
+// import 'package:ortucare/widgets/food_carousel.dart';
+// import '../models/slide_model.dart';
+
+// class HomePageBook extends StatefulWidget {
+//   const HomePageBook({super.key});
+
+//   @override
+//   State<HomePageBook> createState() => _HomePageBookState();
+// }
+
+// class _HomePageBookState extends State<HomePageBook> {
+//   SlideController slide = SlideController();
+//   FoodController _controller = FoodController();
+//   List? slider;
+//   int currentIndex = 1;
+
+//   late PageController controller;
+//   double pageoffSet = 1;
+
+//   @override
+//   void initState() {
+//     super.initState();
+//     slider = slide.slide;
+//     controller = PageController(
+//       initialPage: 1,
+//       viewportFraction: 1.1,
+//     )..addListener(() {
+//         setState(() {
+//           pageoffSet = controller.page!;
+//         });
+//       });
+//   }
+
+//   @override
+//   void dispose() {
+//     controller.dispose();
+//     super.dispose();
+//   }
+
+//   @override
+//   Widget build(BuildContext context) {
+//     double screenWidth = MediaQuery.of(context).size.width;
+
+//     return Scaffold(
+//       backgroundColor: Colors.white,
+//       body: ListView(
+//         children: [
+//           // Header
+//           Container(
+//             width: screenWidth,
+//             height: screenWidth * 0.3,
+//             child: Row(
+//               mainAxisAlignment: MainAxisAlignment.center,
+//               children: [
+//                 Container(
+//                   width: screenWidth * 1,
+//                   height: screenWidth * 0.3,
+//                   child: Row(
+//                     mainAxisAlignment: MainAxisAlignment.center,
+//                     children: [
+//                       Column(
+//                         mainAxisAlignment: MainAxisAlignment.center,
+//                         children: [
+//                           Text(
+//                             "Hi Mother Kenzie",
+//                             textAlign: TextAlign.center,
+//                             style: TextStyle(
+//                                 fontSize: screenWidth * 0.05,
+//                                 color: Colors.black,
+//                                 fontWeight: FontWeight.bold),
+//                           ),
+//                           Text(
+//                             "Kenzie is a good boy today",
+//                             textAlign: TextAlign.center,
+//                             style: TextStyle(
+//                                 fontSize: screenWidth * 0.031,
+//                                 color: pinkTua,
+//                                 fontWeight: FontWeight.bold),
+//                           ),
+//                         ],
+//                       ),
+//                       SizedBox(width: screenWidth * 0.3),
+//                       Container(
+//                         width: screenWidth * 0.1,
+//                         height: screenWidth * 0.1,
+//                         margin: EdgeInsets.only(left: screenWidth * 0.1),
+//                         child: Image.asset(
+//                           'assets/bar.png', // Ganti dengan path gambar kamu
+//                         ),
+//                       ),
+//                     ],
+//                   ),
+//                 ),
+//               ],
+//             ),
+//           ),
+
+//           // Title
+//           Padding(
+//             padding: EdgeInsets.only(left: screenWidth * 0.06),
+//             child: Text(
+//               "Video & Article Today",
+//               style: TextStyle(
+//                 fontSize: screenWidth * 0.05,
+//                 color: Colors.black,
+//                 fontWeight: FontWeight.bold,
+//               ),
+//             ),
+//           ),
+
+//           // Carousel
+//           SizedBox(
+//             height: screenWidth * 1.1,
+//             child: Stack(
+//               alignment: Alignment.center,
+//               children: [
+//                 PageView.builder(
+//                   controller: controller,
+//                   onPageChanged: (index) {
+//                     setState(() {
+//                       currentIndex = index % slide.slide.length;
+//                     });
+//                   },
+//                   itemBuilder: (context, index) {
+//                     double angle = (controller.position.haveDimensions
+//                             ? index.toDouble() - (controller.page ?? 0)
+//                             : index.toDouble() - 1) *
+//                         5;
+//                     angle = angle.clamp(-5, 5);
+//                     final sliderItem = slide.slide[index % slide.slide.length];
+
+//                     return GestureDetector(
+//                       onTap: () {
+//                         Navigator.push(
+//                           context,
+//                           MaterialPageRoute(
+//                             builder: (_) => BookDetailPage(Book: sliderItem),
+//                           ),
+//                         );
+//                       },
+//                       child: Padding(
+//                         padding:
+//                             EdgeInsets.symmetric(horizontal: screenWidth * 0.1),
+//                         child: Transform.rotate(
+//                           angle: angle * pi / 90,
+//                           child: Hero(
+//                             tag: sliderItem.poster,
+//                             child: ClipRRect(
+//                               borderRadius: BorderRadius.circular(25),
+//                               child: Stack(
+//                                 children: [
+//                                   Image.asset(
+//                                     sliderItem.poster,
+//                                     height: screenWidth * 0.8,
+//                                     width: screenWidth,
+//                                     fit: BoxFit.cover,
+//                                   ),
+//                                   Positioned(
+//                                     top: screenWidth * 0.5,
+//                                     child: Container(
+//                                       width: screenWidth,
+//                                       height: screenWidth * 0.3,
+//                                       color: Colors.black.withOpacity(0.5),
+//                                       padding: const EdgeInsets.all(8.0),
+//                                       child: Column(
+//                                         crossAxisAlignment:
+//                                             CrossAxisAlignment.start,
+//                                         children: [
+//                                           Text(
+//                                             sliderItem.hook,
+//                                             style: TextStyle(
+//                                               fontSize: screenWidth * 0.04,
+//                                               color: Colors.white,
+//                                               fontWeight: FontWeight.bold,
+//                                             ),
+//                                           ),
+//                                           Text(
+//                                             sliderItem.hook_desc,
+//                                             style: TextStyle(
+//                                               fontSize: screenWidth * 0.037,
+//                                               color: Colors.white,
+//                                             ),
+//                                           ),
+//                                         ],
+//                                       ),
+//                                     ),
+//                                   ),
+//                                 ],
+//                               ),
+//                             ),
+//                           ),
+//                         ),
+//                       ),
+//                     );
+//                   },
+//                   itemCount: slide.slide.length,
+//                 ),
+//                 // Dots Indicator
+//                 Positioned(
+//                   top: screenWidth * 0.9,
+//                   child: Row(
+//                     children: List.generate(
+//                       slide.slide.length,
+//                       (index) => AnimatedContainer(
+//                         duration: const Duration(milliseconds: 300),
+//                         margin: const EdgeInsets.symmetric(horizontal: 5),
+//                         width: currentIndex == index ? 30 : 10,
+//                         height: 10,
+//                         decoration: BoxDecoration(
+//                           color: currentIndex == index
+//                               ? pinkTua
+//                               : Colors.grey[300],
+//                           borderRadius: BorderRadius.circular(15),
+//                         ),
+//                       ),
+//                     ),
+//                   ),
+//                 ),
+//               ],
+//             ),
+//           ),
+//           Padding(
+//             padding: EdgeInsets.only(left: screenWidth * 0.06),
+//             child: Text(
+//               "Recomendation Food",
+//               style: TextStyle(
+//                 fontSize: screenWidth * 0.05,
+//                 color: Colors.black,
+//                 fontWeight: FontWeight.bold,
+//               ),
+//             ),
+//           ),
+//           FoodCarousel(foodList: _controller.food)
+//         ],
+//       ),
+//       bottomNavigationBar: BottomNav(0),
+//     );
+//   }
+// }
