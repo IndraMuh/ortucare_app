@@ -34,24 +34,88 @@
 ---
 
 ## 📦 Struktur Proyek
-ortucare_app/
-├── frontend/
-│   └── ortucare/                # Aplikasi mobile Flutter
-│       ├── lib/
-│       │   ├── pages/           # Halaman aplikasi (ChatPage, LoginPage, dll)
-│       │   ├── services/        # Koneksi ke backend (UserService, ChatService)
-│       │   ├── widgets/         # Komponen UI seperti Navbar, AlertMessage, dll
-│       │   └── main.dart        # Titik awal aplikasi Flutter
-│       ├── assets/              # Logo, font Lexend, dan gambar pendukung
-│       ├── pubspec.yaml         # Konfigurasi dependencies dan aset
-│       └── android/ios/         # Konfigurasi spesifik platform Android & iOS
-│
-├── backend/
-│   └── ortucare/                # Backend Laravel (REST API)
-│       ├── app/Http/Controllers # Controller Laravel (Auth, Barang, Gemini)
-│       ├── routes/api.php       # Definisi endpoint API
-│       ├── .env                 # Konfigurasi environment (API key Gemini, DB, dll)
-│       ├── composer.json        # Dependencies Laravel
-│       └── public/              # Direktori publik untuk akses HTTP
-│
-└── README.md                    # Dokumentasi proyek (file ini)
+-ortucare_app/
+
+- ├── frontend/
+
+- │   └── ortucare/                   # Aplikasi mobile Flutter
+
+- │       ├── lib/
+  
+- │       │   ├── pages/              # Halaman-halaman utama (ChatPage, LoginPage, dsb)
+
+- │       │   ├── services/           # Layanan komunikasi ke backend (ChatService, UserService)
+
+- │       │   ├── widgets/            # Komponen UI seperti BottomNav, Alert, Konstanta
+
+- │       │   └── main.dart           # Entry point aplikasi Flutter
+
+- │       ├── assets/                 # Logo, font Lexend, dan gambar lainnya
+
+- │       ├── pubspec.yaml            # Konfigurasi dependencies dan aset Flutter
+
+- │       └── android/ / ios/         # File konfigurasi platform Android dan iOS
+
+- │
+
+- ├── backend/
+
+- │   └── ortucare/                   # Backend API menggunakan Laravel
+
+- │       ├── app/Http/Controllers/   # Kontroler utama: AuthController, GeminiController, dll
+
+- │       ├── routes/api.php          # Routing REST API
+ 
+- │       ├── .env                    # Konfigurasi environment (GEMINI_API_KEY, DB, dll)
+
+- │       ├── composer.json           # File dependency Laravel
+
+- │       └── public/                 # Direktori publik akses Laravel (endpoint API)
+
+- │
+
+- └── README.md                       # Dokumentasi utama proyek
+
+---
+
+## ▶️ Cara Pemakaian
+
+### 📲 Jalankan Aplikasi Flutter
+
+1. Masuk ke folder `frontend/ortucare`:
+   ```bash
+   cd frontend/ortucare
+2. Install dependencies:
+    ```bash
+   flutter pub get
+3. Jalankan aplikasi:
+   ```bash
+   flutter run
+4. Jalankan aplikasi:
+   ```bash
+   flutter run
+### 🔧 Jalankan Backend Laravel
+
+1. Masuk ke folder backend/ortucare:
+   ```bash
+   cd backend/ortucare
+2. Install dependencies:
+   ```bash
+   composer install
+3. Salin file .env dan generate key:
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+3. Jalankan server:
+   ```bash
+   php artisan serve
+3. Tambahkan API Key Gemini di .env:
+   ```bash
+   GEMINI_API_KEY=your_api_key_here
+
+---
+
+## 💡 Tips
+- Gunakan flutter_launcher_icons untuk generate ikon:
+  ```bash
+  flutter pub run flutter_launcher_icons:main
