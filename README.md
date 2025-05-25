@@ -2,7 +2,7 @@
 
 **Ortucare** adalah aplikasi mobile berbasis Flutter yang dirancang untuk membantu para orang tua — khususnya ibu — dalam menjalani peran sebagai pengasuh anak. Aplikasi ini dilengkapi dengan asisten AI bernama **Anam** yang siap memberikan saran pengasuhan anak yang cepat, empatik, dan relevan.
 
-![Logo Ortucare](assets/logo.png)
+![Logo Ortucare]([assets/logo.png](https://github.com/IndraMuh/ortucare_app/blob/main/frontend/ortucare/assets/logo.png?raw=true))
 
 ---
 
