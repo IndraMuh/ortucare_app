@@ -34,3 +34,24 @@
 ---
 
 ## 📦 Struktur Proyek
+ortucare_app/
+├── frontend/
+│   └── ortucare/                # Aplikasi mobile Flutter
+│       ├── lib/
+│       │   ├── pages/           # Halaman aplikasi (ChatPage, LoginPage, dll)
+│       │   ├── services/        # Koneksi ke backend (UserService, ChatService)
+│       │   ├── widgets/         # Komponen UI seperti Navbar, AlertMessage, dll
+│       │   └── main.dart        # Titik awal aplikasi Flutter
+│       ├── assets/              # Logo, font Lexend, dan gambar pendukung
+│       ├── pubspec.yaml         # Konfigurasi dependencies dan aset
+│       └── android/ios/         # Konfigurasi spesifik platform Android & iOS
+│
+├── backend/
+│   └── ortucare/                # Backend Laravel (REST API)
+│       ├── app/Http/Controllers # Controller Laravel (Auth, Barang, Gemini)
+│       ├── routes/api.php       # Definisi endpoint API
+│       ├── .env                 # Konfigurasi environment (API key Gemini, DB, dll)
+│       ├── composer.json        # Dependencies Laravel
+│       └── public/              # Direktori publik untuk akses HTTP
+│
+└── README.md                    # Dokumentasi proyek (file ini)
