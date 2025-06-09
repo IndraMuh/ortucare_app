@@ -1,64 +1,48 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# 🍼 Ortucare App – Parenting Assistant with AI 💬
+![Flutter](https://img.shields.io/badge/Flutter-3.4.3-blue?logo=flutter)
+![Laravel](https://img.shields.io/badge/Laravel-10-red?logo=laravel)
+![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS-green)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Ortucare** adalah aplikasi mobile berbasis Flutter yang dirancang untuk membantu para orang tua — khususnya ibu — dalam menjalani peran sebagai pengasuh anak. Aplikasi ini dilengkapi dengan asisten AI bernama **Anam** yang siap memberikan saran pengasuhan anak yang cepat, empatik, dan relevan.
 
-## About Laravel
+![Logo Ortucare](https://github.com/IndraMuh/ortucare_app/blob/main/frontend/ortucare/assets/logo.png?raw=true)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## ✨ Fitur Unggulan
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- 🤖 **Chat AI – Anam**: Asisten cerdas yang siap menjawab pertanyaan parenting.
+- 📂 **Riwayat Percakapan**: Chat tersimpan secara lokal dengan `SharedPreferences`.
+- 🧹 **Clear Chat**: Hapus riwayat chat dengan satu klik.
+- 🎨 **Tampilan modern & lembut**: Menggunakan font Lexend dan nuansa pink feminin.
+- 📱 **Cross Platform**: Mendukung Android dan iOS.
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 📸 Preview Aplikasi
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+| SplashScreen | landing Page | Register Page |
+|--------------|------------|-------------|
+| ![chat](https://github.com/IndraMuh/ortucare_app/blob/main/frontend/ortucare/assets/preview%20(1).jpg?raw=true) | ![input](https://github.com/IndraMuh/ortucare_app/blob/main/frontend/ortucare/assets/preview%20(2).jpg?raw=true) | ![ai](https://github.com/IndraMuh/ortucare_app/blob/main/frontend/ortucare/assets/preview%20(5).jpg?raw=true) |
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+| Login Page | Forgot Password | Home Page |
+|--------------|------------|-------------|
+| ![chat](https://github.com/IndraMuh/ortucare_app/blob/main/frontend/ortucare/assets/preview%20(3).jpg?raw=true) | ![input](https://github.com/IndraMuh/ortucare_app/blob/main/frontend/ortucare/assets/preview%20(4).jpg?raw=true) | ![ai](https://github.com/IndraMuh/ortucare_app/blob/main/frontend/ortucare/assets/preview%20(6).jpg?raw=true) |
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+| Class Page | Ai Page | Profile Page |
+|--------------|------------|-------------|
+| ![chat](https://github.com/IndraMuh/ortucare_app/blob/main/frontend/ortucare/assets/preview%20(7).jpg?raw=true) | ![input](https://github.com/IndraMuh/ortucare_app/blob/main/frontend/ortucare/assets/preview%20(8).jpg?raw=true) | ![ai](https://github.com/IndraMuh/ortucare_app/blob/main/frontend/ortucare/assets/preview%20(9).jpg?raw=true) |
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 🛠️ Teknologi yang Digunakan
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### ⚙️ Backend (Laravel)
+- Laravel 10
+- Gemini API (`generativelanguage.googleapis.com`)
+- Endpoint: `POST /api/ask-ai` untuk memproses pertanyaan pengguna
